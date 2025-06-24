@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.formWrapper {
+  border: 2px black solid;
+  min-width: 100%;
+  font-size: 1.5rem;
+}
+
+.formWeather {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.formWeather-block {
+  margin: 15px;
+  padding: 10px 15px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.textInput {
+  border: 2px green solid;
+}
+
+.textInput > label {
+  text-align: center;
+  display: flex;
+  width: 40%;
+}
+.textInput > input {
+  border: 1px black solid;
+  border-radius: 3px;
+  width: 60%;
+}
+
+.radioInput,
+.weatherResult {
+  border: 2px blue solid;
+  flex-wrap: wrap;
+}
+
+.radioWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resultBlock > * {
+  text-align: center;
+}
+
+.resultBlock > p {
+  font-weight: bold;
+}
+
+.resultArea {
+  border: 2px blue solid;
+  min-height: 2rem;
+}

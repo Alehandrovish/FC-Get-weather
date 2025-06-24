@@ -8,5 +8,49 @@
     <link rel="stylesheet" href="./assets/styles/style.css" type="text/css" />
     <script src="\./src/index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <article class="contentWrapper">
+      <h1>Weather map</h1>
+      <section class="formWrapper">
+        <form class="formWeather" action="#">
+          <div class="formWeather-block textInput">
+            <label for="cityName">City name</label>
+            <input type="text" name="cityName" id="cityName" />
+          </div>
+          <div class="formWeather-block textInput">
+            <label for="cityID">City ID</label>
+            <input type="text" name="cityID" id="cityID" disabled />
+          </div>
+          <section class="formWeather-block radioInput">
+            <div class="radioWrapper">
+              <label for="cityNameRadio">City name</label>
+              <input type="radio" name="typeCity" id="cityNameRadio" checked />
+            </div>
+            <div class="radioWrapper">
+              <label for="cityIDRadio">City ID</label>
+              <input type="radio" name="typeCity" id="cityIDRadio" />
+            </div>
+          </section>
+          <section class="formWeather-block weatherResult">
+            <div class="resultBlock">
+              <p>Temprature</p>
+              <div class="resultArea" id="temprature"></div>
+            </div>
+            <div class="resultBlock">
+              <p>Wind Speed</p>
+              <div class="resultArea" id="windSpeed"></div>
+            </div>
+            <div class="resultBlock">
+              <p>Humidity</p>
+              <div class="resultArea" id="humidity"></div>
+            </div>
+          </section>
+          <section class="formWeather-block buttonsContainer">
+            <button type="submit" id="sumbitBtn">OK</button>
+            <button type="reset" id="resetBtn">Cansel</button>
+          </section>
+        </form>
+      </section>
+    </article>
+  </body>
 </html>
