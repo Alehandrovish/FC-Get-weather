@@ -59,3 +59,13 @@ const sumbitBtn = document.getElementById("sumbitBtn");
 sumbitBtn.addEventListener("click", (e) => {
   getWeather(e);
 });
+
+function reset() {
+  const resultAreas = document.querySelectorAll(".resultArea");
+  resultAreas.forEach((area) => {
+    area.textContent = "";
+  });
+}
+
+const resetBtn = document.getElementById("resetBtn");
+resetBtn.addEventListener("click", reset);
