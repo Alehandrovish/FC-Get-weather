@@ -10,6 +10,7 @@ function setDisable(radioBtn) {
   cityIDInput.disabled = isCityName;
 
   (isCityName ? cityIDInput : cityNameInput).value = "";
+  reset();
 }
 
 const radioButtons = document.querySelectorAll('input[name="typeCity"]');
